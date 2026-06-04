@@ -1,0 +1,191 @@
+body {
+  background-color: hsl(235, 18%, 26%);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.container{
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 800px;
+  padding-left: 40px;
+  padding-right: 15px;
+}
+
+.update-box{
+  flex: 1;
+}
+
+h1 {
+  font-weight: 700;
+  margin-top: 80px;
+  color:hsl(234, 29%, 20%);
+}
+
+p {
+  width: 80%;
+  color: hsl(235, 18%, 26%);
+}
+
+label{
+  color: hsl(235, 18%, 26%);
+}
+
+.error-message-box {
+  margin-bottom: 10px;
+}
+
+.error-message-box > .is-active {
+  color: hsl(4, 100%, 67%);
+  font-size: 13px;
+  margin-left: 50px;
+  font-weight: 700;
+}
+
+.email-address {
+  margin-top: 30px;
+}
+
+.email {
+  color:hsl(234, 29%, 20%);
+  font-weight: 700;
+}
+
+#email {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 60%;
+  margin-bottom: 15px;
+  display: block;
+}
+
+button {
+  width: 66%;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  font-weight: 700;
+  border-style: none;
+  cursor: pointer;
+  display: block;
+}
+
+#subscribe {
+  cursor: pointer;
+}
+
+#subscribe.active {
+  background: linear-gradient(to right, hsl(345, 100%, 65%), hsl(4, 100%, 67%));
+  box-shadow: 0 10px 25px hsla(10, 100%, 65%, 0.4);
+}
+
+.image-box {
+  flex: 1;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  max-width: 330px
+}
+
+img {
+  width: 100%;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+/* mobile design  */
+@media(max-width: 414px) {
+
+  body {
+    display: block;
+  }
+  
+  .container{
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+    min-height: 100vh;
+    padding-bottom: 40px;
+  }
+  
+  .update-box{
+    flex: none;
+    margin-top: 50px;
+    /* border: 2px solid blue; */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h1 {
+    margin-top: 0px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  label{
+    margin-bottom: 20px;
+  }
+
+  .email-address {
+    margin-top: 40px;
+  }
+
+  .email {
+    margin-bottom: 10px;
+  }
+  
+  #email {
+    width: 85%;
+    margin-bottom: 20px;
+    display: block;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  button {
+    width: 95%;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .image-box {
+    flex: none;
+    margin-bottom: 0px;
+    order: -1;
+    width: 100%;
+    max-width: 100vw;
+    margin-top: 0;
+  }
+  
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 500px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+
+
+
